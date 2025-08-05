@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Traffic Assistant Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="left-section">
+      <img src="../static/OIP-removebg-preview.png" alt="Chatbot Icon" />
+      <h1>Lets CHAT</h1>
+      <p>Here for you just tell me what to do !</p>
+    </div>
+    <div class="right-section">
+      <div class="chat-widget">
+        <div class="chat-header">Observo AI</div>
+        <div class="chat-body" id="chat-body">
+          <div class="bot-message message">
+            Welcome to Observo! Upload a video or start chatting.
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="file" id="video-upload" accept="video/*" />
+          <div class="input-row">
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button id="send-btn">Send</button>
+          </div>
+          <video id="preview" class="video-preview" controls style="display:none;"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
